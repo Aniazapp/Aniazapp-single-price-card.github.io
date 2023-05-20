@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triplecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 395px;
+    height: 290px;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 14px hsl(213, 27%, 87%);
+    background-color:white;
+}
+
+/* card1 */
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45%;
+
+}
+
+.title{
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: "Karla";
+    font-weight: 700;
+    color:hsl(179, 62%, 43%);
+    font-size: 1em;
+}
+
+.header{
+    font-family: "Karla";
+    margin-left: 20px;
+    margin-top: 0px;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    font-size:0.8em;
+}
+
+.text1{
+    margin-left: 20px;
+    margin-top: 0px;
+    font-family: "Karla";
+    font-weight: 400;
+    color:hsl(218, 22%, 67%) ;
+    font-size: 0.60em;
+    width: 85%;
+    height: 20%;
+    line-height: 15px;
+}
+
+/* doublecard */
+.doublecard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55%;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+/* card2 */
+.card2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+}
+
+.header2{
+    font-family: "Karla";
+    margin-left: 20px;
+    margin-top: 25px;
+    font-weight: 700;
+    color: white;
+    font-size:0.7em;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+}
+
+.p1{
+    font-family: "Karla";
+    margin-left: 20px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: white;
+}
+
+.p2{
+font-family: "Karla";
+margin-left: 7px;
+font-weight: 400;
+font-size: 0.60em;
+color:hsl(179, 31%, 72%) ;
+}
+
+.p3{
+    margin-left: 20px;
+    margin-top: -20px;
+    font-family: "Karla";
+    font-weight: 400;
+    color:white ;
+    font-size: 0.60em;
+    width: 85%;
+    height: 20%;
+    line-height: 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-right: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: hsl(71, 73%, 54%);
+    border: 0px;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.6em;
+    box-shadow: 14px 14px 14px 14px (black)
+}
+
+/* card3 */
+.card3{
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(74,190,189);
+    border-bottom-right-radius: 5px;
+}
+
+.header3{
+    font-family: "Karla";
+    margin-left: 20px;
+    margin-top: 25px;
+    font-weight: 700;
+    color: white;
+    font-size:0.7em;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    margin-top: 5px;
+    font-family: "Karla";
+    font-weight: 400;
+    color:white ;
+    font-size: 0.50em;
+    width: 60%;
+    height: 90%;
+    line-height: 12px;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        
+    }
+
+    .triplecard{
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+        height: 370px;
+    }
+
+    .doublecard{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 60%;
+        border-bottom-left-radius:5px ;
+        border-bottom-right-radius: 5px;
+    }
+
+    .card1{
+        margin-top: 0px;
+        width: 100%;
+        height: 30%;
+    }
+
+    .title{
+        margin-top: 15px;
+    }
+
+    .header{
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+    }
+
+    .text1{
+        font-size: 0.5em;
+    }
+
+    .card2{
+        margin-top:30px ;
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: none;
+    }
+
+    .header2{
+        margin-top: 15px;
+    }
+
+    .price{
+        margin-top: 0px;
+    }
+
+    .button{
+        margin-top: 10px;
+    }
+
+    .card3{
+        margin-top: -3px;
+        width: 100%;
+        height: 45%;
+        padding-bottom: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .header3{
+        margin-top: 10px;
+    }
+
+    .list{
+        margin-top: -3px;
+
+
+    }
+
+}
